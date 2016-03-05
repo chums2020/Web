@@ -14,10 +14,10 @@ For how to set up the above installation, refer to https://posnorm.com/2015/03/1
 
 
 REQUIRED PYTHON FILES:
-  gdp_spider.py
-  indus_spider.py
-  taiex_spider.py
-  items.py : This is needed to crawl all data series. See Step 2 below.
+  1. gdp_spider.py
+  2. indus_spider.py
+  3. taiex_spider.py
+  4. items.py : This is needed to crawl all data series. See Step 2 below.
 
 
 TO IMPLEMENT THE WEB CRAWLER:
