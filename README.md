@@ -2,13 +2,13 @@
 This README.txt is written for users of Windows machines.
 
 REQUIRED INSTALLATION:
-1. Python 2.7
-2. pip 
-3. lxml
-4. OpenSSL
-5. Scrapy 
-6. Selenium
-7. Firefox browser
+  1. Python 2.7
+  2. pip 
+  3. lxml
+  4. OpenSSL
+  5. Scrapy 
+  6. Selenium
+  7. Firefox browser
 
 For how to set up the above installation, refer to https://posnorm.com/2015/03/12/web-crawling-with-python-part-1-setup/
 
