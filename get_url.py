@@ -1,4 +1,4 @@
-#Reference: Intro to Computer Science Lesson 1- 3, Udacity
+#Reference: Intro to Computer Science, Udacity
 seed = ['','',''] #seed pages
 
 #transform url to HTML source code 
