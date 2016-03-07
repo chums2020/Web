@@ -35,16 +35,15 @@ def union(a,b):#assume a is already a set, i.e.,no repetitive element
         if e not in a:
             a.append(e)
 
-def crawl_web(seed):
+def crawl_web(seed, max_pages):
     tocrawl = [seed]
     crawled = []
-    while tocrawl:#if tocrawl ==[], return FALSE
+    while len(crawled)<max_pages:#if tocrawl ==[], return FALSE
+        if tocrawl==[]:
+            break
         page = tocrawl.pop() #Depth-Furst Search: the last link is searched first
         if page not in crawled:
             union(tocrawl, get_all_links(get_page(page)))
             crawled.append(get_page(page))
     return crawled
         
-
-
-print get_all_links(get_page(page))
