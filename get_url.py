@@ -52,3 +52,22 @@ def crawl_web(seed, max_pages, max_depth):
                 break
     return crawled
 
+def crawl_web(seed, max_pages, max_depth):
+    tocrawl = [seed]
+    crawled = []
+    next_depth = []
+    depth = 0
+    index=[]
+    while depth<= max_depth and len(crawled)<max_pages:#if tocrawl ==[], return FALSE
+        page = tocrawl.pop() #Depth-Furst Search: the last link is searched first
+        if page not in crawled:
+            content = get_page(page)
+            add_page_to_index(index,page,content)
+            union(next_depth, get_all_links(content))
+            crawled.append(get_page(page))
+        if not tocrawl: #if tocrawl if empty
+            tocrawl, next_depth = next_depth, []
+            depth = depth +1
+            if next_depth ==[]:
+                break
+    return index
