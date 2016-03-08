@@ -3,7 +3,11 @@ seed = ['','',''] #seed pages
 
 #transform url to HTML source code 
 def get_page(page): 
-    
+    try: #try block
+        import urllib
+        return urllib.urlopen(url).read()
+    except:
+        return ""
   
 
 def get_next_target(page):
