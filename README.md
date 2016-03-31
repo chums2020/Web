@@ -21,31 +21,29 @@ For how to set up the above installation, refer to https://posnorm.com/2015/03/1
 
 
 **TO IMPLEMENT THE WEB CRAWLER:**  
-*Step 0: 
-  Use the file 'project_name'_spider.py to crawl the data 'project_name'. 
-  For example, gdp_spider.py is used to crawl GDP, 
-  indus_spider.py is used to crawl Industrial Production Index,
-  and taiex_spider is used to crawl TAIEX price and volume.
+*Step 0:  
+  Use the file 'project_name'_spider.py to crawl the data 'project_name'.   
+  For example, gdp_spider.py is used to crawl GDP, indus_spider.py is used to crawl Industrial Production Index, and taiex_spider is used to crawl TAIEX price and volume.
 
 _Step 1:_  
-  Open the command line window. 
-  Specify the working directory, then type -scrapy startproject 'project_name'-.
-  You should see a folder with the name 'project_name' in your working directory now. 
-  Type -cd 'project_name'- on the command window to change your working directory
+  Open the command line window.  
+  Specify the working directory, then type -scrapy startproject 'project_name'-.  
+  You should see a folder with the name 'project_name' in your working directory now.  
+  Type -cd 'project_name'- on the command window to change your working directory.  
 
 _Step 2:_  
-  Under the folder, open the file named 'project_name'.py. 
-  Clear all the codes, and then copy and paste the codes from the ATTACHED file items.py. 
-  Change the class name to 'project_name'Item in the third line of the codes.
-  For example, to scrap GDP data, then type 'class cpiItem(scrapy.Item): 
+  Under the folder, open the file named 'project_name'.py.  
+  Clear all the codes, and then copy and paste the codes from the ATTACHED file items.py.  
+  Change the class name to 'project_name'Item in the third line of the codes.  
+  For example, to scrap GDP data, then type 'class gdpItem(scrapy.Item):'  
   Save.
 
 _Step 3:_  
-  Put 'project_name'_spider.py under the folder 'spiders' under the folder 'project_name'
+  Put 'project_name'_spider.py under the folder 'spiders' under the folder 'project_name'  
 
 _Step 4:_  
-  Type -scrapy crawl 'project_name'_spider -o 'project_name'.csv -t csv- on the command line window.
-  Now you should see the file 'project_name'.csv in the folder. 
+  Type -scrapy crawl 'project_name'_spider -o 'project_name'.csv -t csv- on the command line window.  
+  Now you should see the file 'project_name'.csv in the folder.  
 
 
 
