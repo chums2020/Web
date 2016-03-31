@@ -21,7 +21,7 @@ For how to set up the above installation, refer to https://posnorm.com/2015/03/1
 
 
 **TO IMPLEMENT THE WEB CRAWLER:**  
-*Step 0:  
+_Step 0:_  
   Use the file 'project_name'_spider.py to crawl the data 'project_name'.   
   For example, gdp_spider.py is used to crawl GDP, indus_spider.py is used to crawl Industrial Production Index, and taiex_spider is used to crawl TAIEX price and volume.
 
