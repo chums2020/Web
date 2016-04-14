@@ -1,3 +1,4 @@
+<!--Exercise from the book Joy of PHP-->
 <!--Display today's working hours-->
 <html>
 	<body>
