@@ -1,8 +1,8 @@
 <!--Display today's working hours-->
 <html>
 	<body>
-		<h1> Alan's Farm Stand</h1>
-		Hello everyone. 
+		<h1> Welcome to Claire's Bistro</h1>
+		<h2> Operating Hours</h2> 
 		<?php
 			$current_time =  date("r");
 			echo "<br>". "Current time is $current_time"."<br>";
