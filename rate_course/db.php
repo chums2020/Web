@@ -5,8 +5,7 @@ if (!$con){
 		echo "Connection failed: ".$con->error;
 		exit();
 	}
-//echo "Successfully connected to mySQL.<br>";
-
+	
 $con->select_db("RateCourse"); 
 echo "Selected the RateCourse database";
 ?>
