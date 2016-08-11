@@ -16,9 +16,6 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 driver = webdriver.Firefox() #initialize a Firefox browser
-#invalid_pages = [] # an empty list
-#missing_web_prices_pages= []
-#missing_in_prices_pages = []
 driver.set_page_load_timeout(10)
 
 def scrapLink(url):
