@@ -46,8 +46,6 @@ print init_pages
 csvFile= open('crawl_data5.csv','wb') #open a csv file that will stored data
 csvFile.write(u'\ufeff'.encode('utf8')) #ensure encoding for data written to csv
 writer = csv.writer(csvFile)
-#first row (header)
-writer.writerow(('ID','price','brand','model','year','color','size (cc)','city','transmission','fuel','engine','license_date','door','seat','mileage'))
 
 def scrapLink(newUrl):
     while True:
